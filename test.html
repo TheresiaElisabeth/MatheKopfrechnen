@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>	
+	<title>asdf</title>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+    
+<body>
+    <header>
+        <ul>
+            <li style="float: right"><a href="test.html">TEST</a> </li>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+            <a class="dropbtn">* /</a>
+            <div class="dropdown-content">
+                <a href="easy.html">Leicht</a>
+                <a href="medium.html">Mittel</a>
+                <a href="heavy.html">Schwer</a>
+                <a href="extreme.html">Extrem</a>
+            </div>
+            </li>
+        </ul>
+    </header>
+    <h1>TEST</h1>
+    
+        <div> Bitte gib deinen Namen ein:
+        <input id="name" type="text">
+        <button id="btn" onclick="bestätigen_1()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_1" type="text" readonly="true">        
+    <br>        
+        Ergebnis:
+        <input id="zahl_1" type="number">
+        <button id="btn" onclick="bestätigen_2()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_2" type="text" readonly="true">
+    <br>        
+        Ergebnis:
+        <input id="zahl_2" type="number">
+        <button id="btn" onclick="bestätigen_3()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_3" type="text" readonly="true">
+    <br>        
+        Ergebnis:
+        <input id="zahl_3" type="number">
+        <button id="btn" onclick="bestätigen_4()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_4" type="text" readonly="true">
+    <br>        
+        Ergebnis:
+        <input id="zahl_4" type="number">
+        <button id="btn" onclick="bestätigen_5()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_5" type="text" readonly="true">
+    <br>        
+        Ergebnis:
+        <input id="zahl_5" type="number">
+        <button id="btn" onclick="bestätigen_6()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_6" type="text" readonly="true">
+    <br>        
+        Ergebnis:
+        <input id="zahl_6" type="number">
+        <button id="btn" onclick="bestätigen_7()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_7" type="text" readonly="true">
+    <br>        
+        Ergebnis:
+        <input id="zahl_7" type="number">
+        <button id="btn" onclick="bestätigen_8()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_8" type="text" readonly="true">
+    <br>
+        Ergebnis:
+        <input id="zahl_8" type="number">
+        <button id="btn" onclick="bestätigen_9()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_9" type="text" readonly="true">
+    <br>
+        Ergebnis:
+        <input id="zahl_9" type="number">
+        <button id="btn" onclick="bestätigen_10()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_10" type="text" readonly="true">
+    <br>
+        Ergebnis:
+        <input id="zahl_10" type="number">
+        <button id="btn" onclick="bestätigen_11()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_11" type="text" readonly="true">
+    <br>
+        Ergebnis:
+        <input id="zahl_11" type="number">
+        <button id="btn" onclick="bestätigen_12()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_12" type="text" readonly="true">
+    <br>
+        Ergebnis:
+        <input id="zahl_12" type="number">
+        <button id="btn" onclick="bestätigen_13()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_13" type="text" readonly="true">
+    <br>
+        Ergebnis:
+        <input id="zahl_13" type="number">
+        <button id="btn" onclick="bestätigen_14()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_14" type="text" readonly="true">
+    <br>
+        Ergebnis:
+        <input id="zahl_14" type="number">
+        <button id="btn" onclick="bestätigen_15()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_15" type="text" readonly="true">
+    <br>
+        Ergebnis:
+        <input id="zahl_15" type="number">
+        <button id="btn" onclick="bestätigen_16()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_16" type="text" readonly="true">
+    <br>
+        Ergebnis:
+        <input id="zahl_16" type="number">
+        <button id="btn" onclick="bestätigen_17()">Bestätigen</button>
+        <br>
+        <input id="ausgabe_17" type="text" readonly="true">
+
+        <input id="ende" type="text" readonly="true">
+    <br><br>
+    </div>
+    
+    
+    <script type="text/javascript">
+        function bestätigen_1(){
+            var min = 2;
+            var max = 10;
+            var z = Math.floor(Math.random() * (max - min + 1)) + min;
+                        
+            var n = document.getElementById('name').value;
+            document.getElementById('ausgabe_1').value = "Hallo " + n + "! Du beginnst mit: 2 * " + z;
+            document.getElementById('ende').value = "Startzahl: " + z;     
+        }
+        function bestätigen_2(){
+            var m_3 = document.getElementById('zahl_1').value;
+            document.getElementById('ausgabe_2').value = "3 * " + m_3;
+        }
+        function bestätigen_3(){
+            var m_4 = document.getElementById('zahl_2').value;
+            document.getElementById('ausgabe_3').value = "4 * " + m_4;
+        }
+        function bestätigen_4(){
+            var m_5 = document.getElementById('zahl_3').value;
+            document.getElementById('ausgabe_4').value = "5 * " + m_5;
+        }
+        function bestätigen_5(){
+            var m_6 = document.getElementById('zahl_4').value;
+            document.getElementById('ausgabe_5').value = "6 * " + m_6;
+        }
+        function bestätigen_6(){
+            var m_7 = document.getElementById('zahl_5').value;
+            document.getElementById('ausgabe_6').value = "7 * " + m_7;
+        }
+        function bestätigen_7(){
+            var m_8 = document.getElementById('zahl_6').value;
+            document.getElementById('ausgabe_7').value = "8 * " + m_8;
+        }
+        function bestätigen_8(){
+            var m_9 = document.getElementById('zahl_7').value;
+            document.getElementById('ausgabe_8').value = "9 * " + m_9;
+        }
+        function bestätigen_9(){
+            var d_9 = document.getElementById('zahl_8').value;
+            document.getElementById('ausgabe_9').value = "9 / " + d_9;
+        }
+        function bestätigen_10(){
+            var d_8 = document.getElementById('zahl_9').value;
+            document.getElementById('ausgabe_10').value = "8 / " + d_8;
+        }
+        function bestätigen_11(){
+            var d_7 = document.getElementById('zahl_10').value;
+            document.getElementById('ausgabe_11').value = "7 / " + d_7;
+        }
+        function bestätigen_12(){
+            var d_6 = document.getElementById('zahl_11').value;
+            document.getElementById('ausgabe_12').value = "6 / " + d_6;
+        }
+        function bestätigen_13(){
+            var d_5 = document.getElementById('zahl_12').value;
+            document.getElementById('ausgabe_13').value = "5 / " + d_5;
+        }
+        function bestätigen_14(){
+            var d_4 = document.getElementById('zahl_13').value;
+            document.getElementById('ausgabe_14').value = "4 / " + d_4;
+        }
+        function bestätigen_15(){
+            var d_3 = document.getElementById('zahl_14').value;
+            document.getElementById('ausgabe_15').value = "3 / " + d_3;
+        }
+        function bestätigen_16(){
+            var d_2 = document.getElementById('zahl_15').value;
+            document.getElementById('ausgabe_16').value = "2 / " + d_2;
+        }
+        function bestätigen_17(){
+            var end = document.getElementById('zahl_16').value;
+            document.getElementById('ausgabe_17').value = "Geschaft! Enspricht es der Startzahl? Deine Zahl: " + end;
+        }
+    </script>
+</body>
+	
+
+</html>
